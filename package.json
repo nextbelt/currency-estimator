@@ -1,0 +1,47 @@
+{
+  "name": "estimador-valor-monedas",
+  "version": "1.0.0",
+  "description": "Aplicación de estimación de valor de monedas y billetes potenciada por IA",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --port 3040",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --port 3040 --open",
+    "railway:build": "npm install && npm run build",
+    "railway:start": "NODE_ENV=production node backend/server.js"
+  },
+  "keywords": [
+    "moneda",
+    "billetes",
+    "papel moneda",
+    "valor",
+    "estimación",
+    "numismática",
+    "ia",
+    "inteligencia artificial",
+    "openai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
