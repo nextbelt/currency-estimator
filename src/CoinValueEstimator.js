@@ -96,15 +96,43 @@ const CurrencyValueEstimator = () => {
     <div className="min-h-screen bg-gradient-to-br from-amber-900 via-yellow-800 to-amber-900 p-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-yellow-600 to-amber-600 rounded-xl shadow-2xl p-6 mb-6">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="flex items-center gap-2">
-              <Coins className="w-10 h-10 text-white" />
-              <Banknote className="w-10 h-10 text-white" />
+        <div className="relative bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-700 rounded-xl shadow-xl p-8 mb-8 overflow-hidden">
+          {/* Railway-style background pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_1px_1px,_white_1px,_transparent_0)] bg-[length:20px_20px]"></div>
+          </div>
+          
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-2">
+                <Coins className="w-12 h-12 text-white drop-shadow-lg" />
+                <Banknote className="w-12 h-12 text-white drop-shadow-lg" />
+              </div>
+              <div className="flex-1">
+                <h1 className="text-4xl font-bold text-white mb-2 drop-shadow-lg">
+                  Estimador de Valor de Monedas
+                </h1>
+                <p className="text-blue-100 text-lg font-medium drop-shadow">
+                  Análisis de Monedas y Billetes - Creado por Luis Acosta
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-3xl font-bold text-white">Estimador de Valor de Monedas</h1>
-              <p className="text-yellow-100">Análisis de Monedas y Billetes con Inteligencia Artificial</p>
+            
+            {/* Railway-style badge */}
+            <div className="flex items-center gap-2 mt-4">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-white text-sm font-medium">Powered by Railway</span>
+                </div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-yellow-300" />
+                  <span className="text-white text-sm font-medium">AI Enhanced</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
