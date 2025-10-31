@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const multer = require('multer');
+const path = require('path');
 const OpenAI = require('openai');
 require('dotenv').config();
 
